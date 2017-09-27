@@ -10,7 +10,25 @@ namespace moreClassy
     {
         static void Main(string[] args)
         {
+            Car myCar = new Car();
 
+            myCar.Make = "OldMobile";
+            myCar.Model = "Cutlas Supreme";
+            myCar.Year = 1986;
+            myCar.Colour = "Silver";
+
+            Car myOtherCar;
+            myOtherCar = myCar;
+
+            Console.WriteLine("{0} {1} {2} {3}",
+                myOtherCar.Make,
+                myOtherCar.Model,
+                myOtherCar.Year,
+                myOtherCar.Colour);
+
+            myOtherCar.Model = "98";
+
+            Console.ReadLine();
 
         }
     }
